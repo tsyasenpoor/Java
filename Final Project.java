@@ -37,9 +37,9 @@ public class Project2 {
 		int ts;
 		int k;
 
-		System.out.println("name file jadid ra vared konid: ");
+		System.out.println("Enter the new file's name:");
 		temp = scan.next();
-		System.out.println("Yek reshte ra be onvane kelid vared konid: ");
+		System.out.println("Enter a string as the key: ");
 		reshte = scan.next();
 		reshte = reshte.toLowerCase();
 		
@@ -84,9 +84,9 @@ public class Project2 {
 
 		Scanner main_scanner = new Scanner(main_file);
 
-		System.out.println("name file jadid ra vared konid: ");
+		System.out.println("Enter the new file's name: ");
 		temp = scan.next();
-		System.out.println("Yek reshte ra be onvane kelid vared konid: ");
+		System.out.println("Enter a string as the key:");
 		reshte = scan.next();
 		reshte = reshte.toLowerCase();
 		File fout = new File(temp);
@@ -120,7 +120,7 @@ public class Project2 {
 		Scanner scan = new Scanner(System.in);
 		File main_file;
 		while (true){
-			System.out.println("name file ra vared konid:");
+			System.out.println("Enter file's name:");
 			String main_file_name = scan.next();
 			main_file = new File(main_file_name);
 			if (main_file.exists() && !main_file.isDirectory())
@@ -133,11 +133,11 @@ public class Project2 {
 
 		while (true) {
 
-			System.out.println("yeki az gozinehaye zir ra entekhab konid");
-			System.out.println("1. namayeshe etelaate amarie file");
-			System.out.println("2. code gozarie file");
-			System.out.println("3. baz kardane yek file code shode");
-			System.out.println("4. khorooj");
+			System.out.println("Choose one of the options below:");
+			System.out.println("1. Show the file's statistical information");
+			System.out.println("2. Coding the file");
+			System.out.println("3. Opening a coded file");
+			System.out.println("4. Exit");
 			choice = scan.nextInt();
 			switch (choice) {
 			case 1:
